@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "834755671480",
+    "firebase_url": "https://trabalhofinalandroid-92045.firebaseio.com",
+    "project_id": "trabalhofinalandroid-92045",
+    "storage_bucket": "trabalhofinalandroid-92045.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834755671480:android:a72323c5dff09015",
+        "android_client_info": {
+          "package_name": "unidavi.com.br.trabalhofinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834755671480-2t4qic0a1o2p1envdctpqs7i9kgvpakc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "unidavi.com.br.trabalhofinal",
+            "certificate_hash": "21c08fe9507eee8279a5b96a031ea3f2c89958b8"
+          }
+        },
+        {
+          "client_id": "834755671480-4r2s5fbeva7klm67bp16ehk39mv9p887.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeG7f9NFbfwcM7pQAB-Bhk8WBCFT1DEn8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834755671480-4r2s5fbeva7klm67bp16ehk39mv9p887.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
