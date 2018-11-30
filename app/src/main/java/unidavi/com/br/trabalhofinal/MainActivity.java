@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        Intent intent = new Intent(this, ListActivity.class);
+
         mAuth = FirebaseAuth.getInstance();
 
         Button buttonEntrar = findViewById(R.id.btnEntrar);
@@ -50,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
                                     FirebaseUser user = mAuth.getCurrentUser();
 
                                     //Colocar para ir a lista
+                                    startActivity(intent);
 
                                 } else {
                                     Toast.makeText(MainActivity.this, "Usuario nao autenticado, por favor tente novamente!.",
