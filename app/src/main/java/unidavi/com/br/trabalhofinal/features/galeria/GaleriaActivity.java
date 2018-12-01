@@ -53,19 +53,23 @@ public class GaleriaActivity extends AppCompatActivity {
 
         FloatingActionButton buttonCamera = findViewById(R.id.open_camera);
 
-        buttonCamera.setOnClickListener(view -> {
-            file = new File(getExternalFilesDir(Environment.DIRECTORY_PICTURES),
-                    "photo-"+System.currentTimeMillis()+".jpg");
-            Uri outputDir = FileProvider.getUriForFile(GaleriaActivity.this,
-                    BuildConfig.APPLICATION_ID, file);
+        buttonCamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String fileName = "photo-"+System.currentTimeMillis()+".jpg";
 
-            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            intent.putExtra(MediaStore.EXTRA_OUTPUT, outputDir);
+                file = new File(getExternalFilesDir(Environment.DIRECTORY_PICTURES),
+                        fileName);
+                Uri outputDir = FileProvider.getUriForFile(GaleriaActivity.this,
+                        BuildConfig.APPLICATION_ID, file);
 
-            startActivityForResult(
-                    intent,
-                    1_000);
-        });
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                intent.putExtra(MediaStore.EXTRA_OUTPUT, outputDir);
+
+                startActivityForResult(
+                        intent,
+                        1_000);
+        }});
     }
 
     @Override

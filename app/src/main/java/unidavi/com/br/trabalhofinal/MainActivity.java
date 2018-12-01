@@ -15,6 +15,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import unidavi.com.br.trabalhofinal.features.galeria.GaleriaActivity;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        Intent intent = new Intent(this, ListActivity.class);
+        Intent intent = new Intent(this, GaleriaActivity.class);
 
         mAuth = FirebaseAuth.getInstance();
 
