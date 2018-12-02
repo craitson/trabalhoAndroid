@@ -2,17 +2,24 @@ package unidavi.com.br.trabalhofinal.model;
 
 public class Foto {
 
-    private String caminho;
+    private String fileName;
     private String uf;
     private String cidade;
     private String bairro;
 
-    public String getCaminho() {
-        return caminho;
+    public Foto(String fileName, String uf, String cidade, String bairro) {
+        this.fileName = fileName;
+        this.uf = uf;
+        this.cidade = cidade;
+        this.bairro = bairro;
     }
 
-    public void setCaminho(String caminho) {
-        this.caminho = caminho;
+    public String getfileName() {
+        return fileName;
+    }
+
+    public void setfileName(String fileName) {
+        this.fileName = fileName;
     }
 
     public String getUf() {

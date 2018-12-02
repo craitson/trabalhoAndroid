@@ -10,6 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 import java.util.ArrayList;
 
 import unidavi.com.br.trabalhofinal.R;
@@ -38,5 +41,13 @@ public class ListFragment extends Fragment {
 
             recyclerView.setAdapter(adapter);
             return view;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        FirebaseAuth auth = FirebaseAuth.getInstance();
+        FirebaseUser user = auth.getCurrentUser();
     }
 }

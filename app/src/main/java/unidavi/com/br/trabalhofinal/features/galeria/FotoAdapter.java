@@ -46,7 +46,7 @@ public class FotoAdapter extends RecyclerView.Adapter<FotoViewHolder> {
         holder.labelBairro.setText(myFoto.getBairro());
 
         Picasso.with(context)
-                .load(myFoto.getCaminho())
+                .load(myFoto.getfileName())
                 .into(holder.foto);
     }
 
